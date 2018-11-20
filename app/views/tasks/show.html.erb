@@ -1,0 +1,16 @@
+<div class="container">
+
+  <h1>Task: <i><%= @task.title %></i> </h1>
+  <%= link_to "edit", edit_path, class: 'btn btn-warning' %>
+
+  <div class="details">
+    <p><%= @task.details %></p>
+  </div>
+  <br>
+  <p><%= @task.completed ? "This task is completed !" : "This task isn't done yet.." %></p>
+
+  <div class="link">
+    <%= link_to "back to task list", tasks_path, class: 'btn btn-info' %>
+
+  </div>
+</div>

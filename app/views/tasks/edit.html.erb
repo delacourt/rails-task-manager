@@ -1,0 +1,22 @@
+<h1>Edit a task</h1>
+
+<div class="container">
+
+  <%= form_for(@task) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title, class: "form-control" %>
+
+    <%= f.label :details %>
+    <%= f.text_field :details, class: "form-control" %>
+
+    <%= f.label :completed %>
+    <%= f.check_box :completed %>
+
+    <div>
+      <%= f.submit%>
+    </div>
+  <% end %>
+</div>
+
+
+
